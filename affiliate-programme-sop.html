@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Operations Director Affiliate Programme — SOP</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --card: #141821;
+    --line: #222837;
+    --text: #e8ecf3;
+    --muted: #9aa3b2;
+    --accent: #3b82f6;
+    --green: #22c55e;
+    --warn: #f59e0b;
+    --red: #ef4444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 32px 24px 64px; }
+  header { margin-bottom: 26px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 30px 0 12px; padding-top: 18px; border-top: 1px solid var(--line); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 16px; margin: 22px 0 8px; color: var(--accent); }
+  p { color: var(--text); margin: 8px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+  ul, ol { margin: 8px 0; padding-left: 22px; }
+  li { margin: 4px 0; }
+  code {
+    background: #0e1119;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    color: #c4b5fd;
+  }
+  pre {
+    background: #0e1119;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    overflow-x: auto;
+    font-size: 13px;
+    margin: 12px 0;
+  }
+  pre code { background: none; padding: 0; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 18px;
+    margin: 14px 0;
+  }
+  .note {
+    background: #15233a;
+    border-left: 3px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 6px;
+    margin: 14px 0;
+    font-size: 14px;
+    color: #cbd5e1;
+  }
+  .note.warn { background: #2a1f00; border-left-color: var(--warn); color: #fde68a; }
+  .note.red { background: #2a0d0d; border-left-color: var(--red); color: #fca5a5; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 500; }
+  .pill {
+    display: inline-block;
+    background: #1f2937;
+    color: var(--muted);
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .pill.daily { background: #15233a; color: #93c5fd; }
+  .pill.weekly { background: #0e3a2e; color: #86efac; }
+  .pill.monthly { background: #3b1d61; color: #c4b5fd; }
+  .pill.adhoc { background: #3f3500; color: #fde68a; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 24px 0; }
+  a { color: var(--accent); }
+  .toc { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 16px 0 24px; }
+  .toc h3 { margin-top: 0; color: var(--text); font-size: 14px; }
+  .toc ul { margin: 0; }
+  .toc a { color: var(--muted); text-decoration: none; font-size: 14px; }
+  .toc a:hover { color: var(--text); }
+
+  @media print {
+    body { background: #fff; color: #000; }
+    .card { background: #fff; border-color: #ddd; }
+    .note { background: #f3f4f6; color: #000; }
+    .note.warn { background: #fef3c7; }
+    .note.red { background: #fee2e2; }
+    code { background: #f3f4f6; color: #000; }
+    pre { background: #f3f4f6; }
+    h1, h2 { color: #000; }
+    .muted, th { color: #555; }
+    a { color: #1d4ed8; }
+    .toc { background: #f9fafb; }
+    h2 { border-top-color: #ddd; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Operations Director Affiliate Programme</h1>
+  <p class="muted">Standard Operating Procedure (SOP) — v1.0</p>
+  <p class="muted">Last updated: June 2026 · Owner: Kevin Brittain</p>
+</header>
+
+<div class="toc">
+  <h3>Contents</h3>
+  <ul>
+    <li><a href="#overview">1. Programme overview</a></li>
+    <li><a href="#commercials">2. Commercial terms</a></li>
+    <li><a href="#how-tracking-works">3. How tracking works</a></li>
+    <li><a href="#onboarding">4. Onboarding new affiliates</a></li>
+    <li><a href="#admin-rhythm">5. Admin rhythm (daily / weekly / monthly)</a></li>
+    <li><a href="#payouts">6. Monthly payout process</a></li>
+    <li><a href="#edge-cases">7. Refunds, chargebacks, disputes</a></li>
+    <li><a href="#removing">8. Pausing or removing an affiliate</a></li>
+    <li><a href="#troubleshooting">9. Troubleshooting</a></li>
+    <li><a href="#infrastructure">10. Infrastructure inventory</a></li>
+  </ul>
+</div>
+
+<!-- 1 -->
+<h2 id="overview">1. Programme overview</h2>
+
+<p>The Operations Director affiliate programme pays £500 to anyone who introduces a qualifying paying client. Two tracks:</p>
+
+<ul>
+  <li><strong>Client track</strong>: existing Operations Director clients. Auto-approved when added by admin.</li>
+  <li><strong>Public track</strong>: non-clients (accountants, consultants, partners). They apply via a public form. Approval is manual by Kevin.</li>
+</ul>
+
+<p>Both tracks share the same payout structure, attribution rules, and dashboard.</p>
+
+<!-- 2 -->
+<h2 id="commercials">2. Commercial terms</h2>
+
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Trigger</th><th>Amount</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Signup tranche</td>
+      <td>Client's £1,997 setup clears AND 14-day guarantee expires with no refund</td>
+      <td>£250</td>
+    </tr>
+    <tr>
+      <td>Retention tranche</td>
+      <td>Client makes their third £247 monthly payment with no chargeback</td>
+      <td>£250</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Total per qualified client</strong></td>
+      <td><strong>£500</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Attribution window: 60 days from click. Last-click wins.</p>
+<p>Payment: BACS or PayPal. Monthly on the 7th. £100 minimum threshold.</p>
+
+<!-- 3 -->
+<h2 id="how-tracking-works">3. How tracking works</h2>
+
+<p>Six steps from click to conversion:</p>
+
+<ol>
+  <li>Affiliate shares <code>https://affiliates.operationsdirector.co.uk/r/CODE</code></li>
+  <li>Visitor clicks. App logs the click and sets a 60-day cookie on <code>.operationsdirector.co.uk</code></li>
+  <li>App redirects to <code>launch.operationsdirector.co.uk/launch?ref=CODE</code></li>
+  <li>Visitor browses, clicks "Get Operations OS", pays via Stripe (unchanged Stripe checkout flow)</li>
+  <li>Stripe redirects to the thank-you page with <code>?session_id=cs_xxx</code>. A snippet on that page reads the cookie + session_id and POSTs to the affiliate app</li>
+  <li>When the Stripe webhook fires <code>checkout.session.completed</code>, the affiliate app matches the session_id to the stored affiliate code and creates a Conversion record</li>
+</ol>
+
+<div class="note">
+  Important: the affiliate scheme does <strong>not</strong> touch your Stripe checkout, your subscription billing, or your GHL webhooks. All affiliate logic lives in a separate Cloudflare Pages project.
+</div>
+
+<!-- 4 -->
+<h2 id="onboarding">4. Onboarding new affiliates</h2>
+
+<h3>Adding an existing client as an affiliate</h3>
+
+<ol>
+  <li>Open <a href="https://affiliates.operationsdirector.co.uk/admin.html">the admin panel</a></li>
+  <li>In "Add affiliate manually (invited)" enter: full name, email, optional business name, optional custom code</li>
+  <li>Click Create affiliate</li>
+  <li>Copy the link that appears (e.g. <code>https://affiliates.operationsdirector.co.uk/r/SARAHJ-422</code>)</li>
+  <li>Email the affiliate their link with the launch email template from <code>03-launch-email-and-partner-onepager.md</code></li>
+</ol>
+
+<h3>Processing a public application</h3>
+
+<ol>
+  <li>When someone applies via the public form, their entry appears at the top of the admin panel under "Pending public applications"</li>
+  <li>Review their submitted message and business name</li>
+  <li>Optional: edit the auto-generated code before approving</li>
+  <li>Click Approve (or Reject)</li>
+  <li>On approval, email them their link with a welcome message and the partner one-pager attached</li>
+</ol>
+
+<div class="note warn">
+  Vetting bar for public applicants: must have an audience or network of UK SMEs (5-100 staff). Reject affiliate marketers with no relevant audience, anyone offering to do paid ads on Operations Director brand keywords, or anyone who looks like a competitor.
+</div>
+
+<!-- 5 -->
+<h2 id="admin-rhythm">5. Admin rhythm</h2>
+
+<h3><span class="pill daily">Daily</span> (2 mins, optional)</h3>
+
+<ul>
+  <li>Open admin panel</li>
+  <li>Glance at "Conversions" table for any new entries</li>
+  <li>If you see one, the client paid and the affiliate is in line to earn</li>
+</ul>
+
+<h3><span class="pill weekly">Weekly</span> (10 mins, every Monday)</h3>
+
+<ul>
+  <li>Process any pending public applications (approve or reject)</li>
+  <li>Send approval emails with the affiliate link</li>
+  <li>Check the leaderboard. Identify top performer of the week. Send a thank-you message</li>
+  <li>Skim any clicks vs conversions to spot under-performers worth coaching</li>
+</ul>
+
+<h3><span class="pill monthly">Monthly</span> (30 mins, 7th of every month)</h3>
+
+<p>See section 6 below for the full payout process.</p>
+
+<h3><span class="pill adhoc">Ad-hoc</span></h3>
+
+<ul>
+  <li>Refund or chargeback notifications from Stripe (see section 7)</li>
+  <li>Affiliate complaints or queries (respond within 1 working day)</li>
+  <li>Removing inactive or abusive affiliates (see section 8)</li>
+</ul>
+
+<!-- 6 -->
+<h2 id="payouts">6. Monthly payout process</h2>
+
+<p>On the 7th of every month:</p>
+
+<ol>
+  <li>Open the admin panel</li>
+  <li>Click "Run payout check" (or skip this if your nightly cron is set up via cron-job.org or Make.com)
+    <ul>
+      <li>This flips all eligible signup tranches (past 14-day guarantee) from "pending" to "due"</li>
+      <li>This flips all eligible month-3 tranches (3rd monthly payment paid) from "pending" to "due"</li>
+    </ul>
+  </li>
+  <li>Filter the Conversions table to status = qualified</li>
+  <li>Group "due" payouts by affiliate. For each affiliate:
+    <ul>
+      <li>Sum the due tranches</li>
+      <li>If under £100, leave it. It rolls forward</li>
+      <li>If £100+, pay it via BACS (UK bank) or PayPal</li>
+    </ul>
+  </li>
+  <li>Mark each paid payout as "paid" in admin (button on each conversion row)</li>
+  <li>Send each affiliate a statement email: "You earned £X this month for clients A, B, C. Paid via [BACS/PayPal] today"</li>
+</ol>
+
+<div class="note">
+  VAT note: if the affiliate is VAT registered, they invoice you plus VAT. If not, you pay the £500 net and they self-declare for income tax. Confirm tax setup with each affiliate before the first payment.
+</div>
+
+<!-- 7 -->
+<h2 id="edge-cases">7. Refunds, chargebacks, disputes</h2>
+
+<h3>Refund within the 14-day guarantee</h3>
+
+<ul>
+  <li>Stripe automatically fires <code>charge.refunded</code> webhook</li>
+  <li>Affiliate app marks the conversion as <code>refunded</code></li>
+  <li>Signup tranche is forfeited (was still pending)</li>
+  <li>No action needed from you. The affiliate is not paid for that referral.</li>
+</ul>
+
+<h3>Refund AFTER signup tranche has been paid</h3>
+
+<ul>
+  <li>Affiliate app marks the conversion as <code>refunded</code> and changes payout status to <code>clawed_back</code></li>
+  <li>Deduct £250 from the affiliate's next monthly payout</li>
+  <li>If they have no upcoming payout, the debt becomes payable. Email them to invoice you back, or write off after 90 days</li>
+</ul>
+
+<h3>Chargeback or dispute</h3>
+
+<ul>
+  <li>Same handling as refund. Tranche either forfeited or clawed back depending on whether it was paid yet</li>
+  <li>If chargeback fraud is suspected from the affiliate side, ban the affiliate (set status to <code>banned</code> in admin)</li>
+</ul>
+
+<h3>Client cancels before month 3</h3>
+
+<ul>
+  <li>Signup tranche stands. The £250 is paid (client cleared the guarantee window)</li>
+  <li>Month-3 tranche is forfeited. The £250 is not paid</li>
+</ul>
+
+<h3>Self-referral attempt</h3>
+
+<ul>
+  <li>Affiliate app automatically blocks attribution when client email = affiliate email. No conversion record is created</li>
+  <li>If you spot a near-miss (different email but obviously same person/business), manually delete the conversion in D1 and email the affiliate to remind them of the rules</li>
+</ul>
+
+<!-- 8 -->
+<h2 id="removing">8. Pausing or removing an affiliate</h2>
+
+<h3>To pause (temporary)</h3>
+
+<ol>
+  <li>Open admin panel</li>
+  <li>Find the affiliate, set status to <code>paused</code></li>
+  <li>Their /r/CODE link still works but clicks won't be logged. Existing conversions still pay out as scheduled</li>
+</ol>
+
+<h3>To ban (permanent, abuse or breach of terms)</h3>
+
+<ol>
+  <li>Set status to <code>banned</code> in admin</li>
+  <li>Send them written notice via email referencing the breach</li>
+  <li>Forfeit any unpaid tranches if the breach involved fraud or brand damage. Pay out any earned, properly-attributed tranches if their offence was minor</li>
+  <li>Do not delete their record. Keep for audit trail</li>
+</ol>
+
+<!-- 9 -->
+<h2 id="troubleshooting">9. Troubleshooting</h2>
+
+<table>
+  <thead>
+    <tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Affiliate says they clicked their own link to test and no cookie set</td>
+      <td>Browser blocks third-party cookies, or affiliate is in private mode</td>
+      <td>Have them try Chrome incognito with third-party cookies enabled. The cookie is first-party on <code>.operationsdirector.co.uk</code> so it should always work.</td>
+    </tr>
+    <tr>
+      <td>Client paid but no conversion appears in admin</td>
+      <td>Either (a) thank-you snippet didn't fire, (b) Stripe webhook isn't reaching affiliate app, (c) attribution window expired</td>
+      <td>Check Stripe webhook logs in Stripe dashboard. Check D1 <code>stripe_session_attributions</code> table for the session_id. If mapping exists but no conversion record, check affiliate app function logs in Cloudflare.</td>
+    </tr>
+    <tr>
+      <td>Affiliate didn't get their magic link email</td>
+      <td>Resend API not configured, or email in spam</td>
+      <td>Check Cloudflare Pages → Functions → Real-time logs for the magic link URL printed there. Forward manually. Or set up Resend properly.</td>
+    </tr>
+    <tr>
+      <td>Admin panel asks for password every page load</td>
+      <td>Basic Auth is per-session</td>
+      <td>Expected behaviour. Stay signed in for the session.</td>
+    </tr>
+    <tr>
+      <td>Public application form returns 500 error</td>
+      <td>Possible: malformed input. Likely: D1 binding misconfigured</td>
+      <td>Cloudflare dashboard → od-affiliates → Settings → Bindings → confirm DB binding = od-affiliates.</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- 10 -->
+<h2 id="infrastructure">10. Infrastructure inventory</h2>
+
+<h3>Production resources</h3>
+
+<ul>
+  <li><strong>Cloudflare Pages project</strong>: <code>od-affiliates</code></li>
+  <li><strong>Cloudflare D1 database</strong>: <code>od-affiliates</code> (id <code>a4978b82-86bc-45c9-8ccf-d113b36ddc93</code>)</li>
+  <li><strong>Custom domain</strong>: <code>affiliates.operationsdirector.co.uk</code></li>
+  <li><strong>Bridge worker (Stripe)</strong>: <code>od-billing-bridge.kevinbrittain.workers.dev</code></li>
+  <li><strong>GHL funnel</strong>: contains launch page + thank-you page with embedded snippets</li>
+</ul>
+
+<h3>Local source code</h3>
+
+<p><code>~/Desktop/od-affiliates/</code></p>
+
+<ul>
+  <li><code>functions/</code> — API endpoints (JavaScript)</li>
+  <li><code>public/</code> — HTML pages (admin, dashboard, leaderboard, apply, snippets)</li>
+  <li><code>schema.sql</code> — D1 database schema</li>
+  <li><code>wrangler.toml</code> — Cloudflare config</li>
+</ul>
+
+<h3>D1 tables</h3>
+
+<table>
+  <thead>
+    <tr><th>Table</th><th>Purpose</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><code>affiliates</code></td><td>One row per affiliate. Stores code, name, email, status, source, payout method</td></tr>
+    <tr><td><code>clicks</code></td><td>Every visit to /r/CODE. Used for attribution fallback</td></tr>
+    <tr><td><code>conversions</code></td><td>One row per qualifying paid client. Tracks tranche statuses</td></tr>
+    <tr><td><code>payouts</code></td><td>Per-tranche payout records (signup + month-3)</td></tr>
+    <tr><td><code>stripe_session_attributions</code></td><td>Mapping from Stripe session_id to affiliate_code (written by thank-you page snippet)</td></tr>
+    <tr><td><code>sessions</code></td><td>Magic-link sessions for affiliate dashboard login</td></tr>
+    <tr><td><code>magic_links</code></td><td>Short-lived tokens for magic-link auth</td></tr>
+  </tbody>
+</table>
+
+<h3>Environment variables (Cloudflare Pages → od-affiliates → Settings)</h3>
+
+<ul>
+  <li>Plaintext: <code>LAUNCH_URL</code>, <code>SETUP_AMOUNT_PENCE</code>, <code>MONTHLY_AMOUNT_PENCE</code>, <code>COOKIE_DOMAIN</code>, <code>COOKIE_DAYS</code>, <code>ADMIN_EMAIL</code></li>
+  <li>Secrets: <code>ADMIN_PASSWORD</code>, <code>STRIPE_WEBHOOK_SECRET</code>, <code>RESEND_API_KEY</code></li>
+</ul>
+
+<h3>Deploying a code change</h3>
+
+<pre><code>cd ~/Desktop/od-affiliates
+wrangler pages deploy public --project-name=od-affiliates</code></pre>
+
+<h3>Running a database query manually</h3>
+
+<pre><code>wrangler d1 execute od-affiliates --remote --command="YOUR SQL HERE"</code></pre>
+
+<div class="note red">
+  Backup before any schema change. The <code>od-affiliates</code> D1 database is the only source of truth for affiliate data. There is no automatic backup currently. Manually export the tables to CSV before any major change.
+</div>
+
+</div>
+</body>
+</html>
